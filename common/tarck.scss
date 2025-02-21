@@ -1,0 +1,113 @@
+/* square avi */
+img.avatar {
+    border-radius: 0.2em;
+}
+
+/* custom tarck */
+
+.emoji[title=":tarckbear:"] {
+    width: 65px;
+    height: 65px;
+}
+
+.emoji[title=":smilegrant:"] {
+    width: 97px;
+    height: 100px;
+}
+
+button {
+    border-radius: 3px;
+}
+
+.topic-list td.posters img {
+    visibility: hidden;
+}
+
+th.posters {
+    visibility: hidden;
+}
+
+.d-header #site-logo {
+    height: 4em;
+    margin-top: -0.4em;
+}
+
+/* =============== Tarck Header Menu CSS ================= */
+
+/* The outermost wrapper */
+#tarck-navbar {
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* is there a better way to detect PM pages and Topic pages from CSS? */
+body[class*="archetype-"] #tarck-navbar {
+    position: absolute;
+}
+
+/* This inner wrapper makes sure the nav bar respects your forum's max width */
+span#tarck-top-links {
+    display: block !important;
+    margin: 5px auto 0 auto;
+    max-width: 1110px;
+}
+
+/* The list of links itself */
+.tarck-nav-link-container li {
+    display: inline-block;
+    float: left;
+}
+
+/* <a> tags are links, while the <b> tag is the current page */
+.tarck-nav-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tarck-nav-link-container a,
+.tarck-nav-link-container b {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 48px;
+    padding: 1em 1.25em;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.tarck-nav-link-container a:hover,
+.tarck-nav-link-container a:active,
+.tarck-nav-link-container a:focus {
+    background: #ed9fcd;
+    color: #fff;
+}
+
+/* small-screen mode */
+@media screen and (max-width: 1024px) {
+
+    /* the .js makes sure that "small-screen-mode" overrides "big-screen-mode */
+    .js div#tarck-navbar {
+        position: static;
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
+
+    .tarck-nav-link-container {
+        position: static;
+        margin-left: 0;
+    }
+
+    .tarck-nav-link-container a,
+    .tarck-nav-link-container b {
+        color: #ed9fcd;
+    }
+}
+
+.topic-meta-data .names .first {
+    order: 0;
+}
