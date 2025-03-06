@@ -71,28 +71,6 @@
         max-width: unset;
       }
     }
-
-    .topic-list-data {
-      a.title:not(.badge-notification) {
-        color: var(--simple-theme-link-color);
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    &:not(.visited) {
-      .excerpt__contents {
-        color: var(--primary-high);
-      }
-    }
-
-    &.visited {
-      .topic-list-data a.title:not(.badge-notification) {
-        color: var(--simple-theme-visited-link-color);
-      }
-    }
   }
 
   .main-link a.title {
