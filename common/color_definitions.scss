@@ -1,5 +1,5 @@
-$simple-theme-link-color: dark-light-choose(var(--tertiary), #ff7597);
-$simple-theme-visited-link-color: dark-light-choose(#6644aa, #9787b6);
+$simple-theme-link-color: dark-light-choose(#ff7597, #6644aa);
+$simple-theme-visited-link-color: dark-light-choose(#d8dee9, #b15985);
 
 :root {
   --simple-theme-link-color: #{$simple-theme-link-color};
