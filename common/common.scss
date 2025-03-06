@@ -2,12 +2,6 @@
     border-bottom: 1px solid #eee;
   }
   
-  .topic-list a.title:not(.badge-notification) {
-    color: #3b5998;
-    font-weight: 500;
-    font-size: 18px;
-  }
-  
   .topic-list a.title:not(.badge-notification):hover {
     text-decoration: underline;
   }
