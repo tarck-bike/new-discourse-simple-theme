@@ -1,0 +1,289 @@
+.topic-list > tbody tr:not(.last-visit):not(.topic-list-item-separator) td {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .topic-list a.title:not(.badge-notification) {
+    color: #3b5998;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .topic-list a.title:not(.badge-notification):hover {
+    text-decoration: underline;
+  }
+  
+  .topic-list .creator,
+  .topic-list .editor {
+    font-size: 13px;
+    display: block;
+    margin-top: 3px;
+  }
+  
+  .topic-list .main-link {
+    width: auto;
+  }
+  
+  .topic-list {
+    td,
+    .creator a,
+    .editor a {
+      color: #888;
+    }
+  }
+  
+  .topic-list td {
+    padding-bottom: 10px;
+  }
+  
+  .topic-list th {
+    color: black;
+    background-color: #fafafa;
+  }
+  .topic-list {
+    border-top: none;
+  }
+  
+  .topic-list td:first-of-type {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  .topic-list tr.topic-list-item-separator td:first-of-type {
+    padding: 0;
+  }
+  
+  .topic-list {
+    .fa-tag {
+      opacity: 0.7;
+      font-size: 10px;
+      margin-right: -2px;
+    }
+    .num.posts-map {
+      position: relative;
+      font-size: 17px;
+      a {
+        color: #888 !important;
+        font-weight: normal;
+      }
+      a.heatmap-high {
+        color: #c66 !important;
+      }
+      width: 100px;
+    }
+  }
+  
+  .topic-list td.last-post,
+  .topic-list th.activity {
+    width: 160px;
+    .relative-date {
+      color: #666;
+    }
+  }
+  
+  .topic-list .creator .relative-date {
+    margin-left: 8px;
+  }
+  
+  .badge-category-bg {
+    opacity: 0.8;
+  }
+  
+  .topic-list .badge-wrapper.bar {
+    .badge-category {
+      color: #9a9a9a !important;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 2px 6px;
+    }
+    .badge-category-bg {
+      top: -1px;
+    }
+  }
+  
+  .last-post {
+    .poster-avatar {
+      margin-right: 10px;
+    }
+    .poster-avatar,
+    .poster-info {
+      float: left;
+    }
+  }
+  
+  .topic-list .posts {
+    width: auto;
+  }
+  
+  /* topic page */
+  #topic-progress {
+    background-color: #f1f1f1;
+    color: #666;
+    font-weight: normal;
+    .bg {
+      background-color: #bee9e9;
+    }
+  }
+  
+  nav.post-controls button.has-like {
+    color: #08c;
+  }
+  
+  .badge-wrapper.bullet span.badge-category {
+    color: #333 !important;
+  }
+  
+  .creator .badge-wrapper.bullet span.badge-category {
+    color: #888 !important;
+    margin-top: -2px;
+  }
+  
+  img.avatar {
+    border-radius: 3px;
+  }
+  
+  #suggested-topics td.main-link {
+    width: 500px;
+  }
+  
+  .topic-list a.title.visited:not(.badge-notification) {
+    color: #6644aa;
+  }
+  
+  .topic-list-item .discourse-tags {
+    font-size: 0.75em;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  body {
+    .topic-list-item.visited a.badge-wrapper,
+    .latest-topic-list-item.visited a.badge-wrapper,
+    .category-topic-link.visited a.badge-wrapper {
+      opacity: 1;
+    }
+  }
+  
+  .emoji[title=":tarckbear:"] {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .emoji[title=":smilegrant:"] {
+    width: 97px;
+    height: 100px;
+  }
+  
+  button {
+    border-radius: 3px;
+  }
+  
+  .topic-list td.posters img {
+    visibility: hidden;
+  }
+  
+  th.posters {
+    visibility: hidden;
+  }
+  
+  .d-header #site-logo {
+    height: 4em;
+    margin-top: -0.4em;
+  }
+  
+  .topic-list .topic-excerpt {
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  /* =============== Tarck Header Menu CSS ================= */
+  
+  /* The outermost wrapper */
+  #tarck-navbar {
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* is there a better way to detect PM pages and Topic pages from CSS? */
+  body[class*="archetype-"] #tarck-navbar {
+    position: absolute;
+  }
+  
+  /* This inner wrapper makes sure the nav bar respects your forum's max width */
+  span#tarck-top-links {
+    display: block !important;
+    margin: 5px auto 0 auto;
+    max-width: 1110px;
+  }
+  
+  /* The list of links itself */
+  .tarck-nav-link-container li {
+    display: inline-block;
+    float: left;
+  }
+  
+  /* <a> tags are links, while the <b> tag is the current page */
+  .tarck-nav-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .tarck-nav-link-container a,
+  .tarck-nav-link-container b {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 48px;
+    padding: 1em 1.25em;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  
+  .tarck-nav-link-container a:hover,
+  .tarck-nav-link-container a:active,
+  .tarck-nav-link-container a:focus {
+    background: #ed9fcd;
+    color: #fff;
+  }
+  
+  /* small-screen mode */
+  @media screen and (max-width: 1024px) {
+    /* the .js makes sure that "small-screen-mode" overrides "big-screen-mode */
+    .js div#tarck-navbar {
+      position: static;
+      margin-top: -1em;
+      margin-bottom: 1em;
+    }
+  
+    .tarck-nav-link-container {
+      position: static;
+      margin-left: 0;
+    }
+  
+    .tarck-nav-link-container a,
+    .tarck-nav-link-container b {
+      color: #ed9fcd;
+    }
+  }
+  
+  .topic-meta-data .names .first {
+    order: 0;
+  }
+
+.topic-list {
+
+    .badge-category {
+        display: none;
+    }
+
+    .discourse-tags {
+        display: none;
+    }
+}
+
+
