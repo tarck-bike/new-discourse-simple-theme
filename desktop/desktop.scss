@@ -52,6 +52,7 @@
     .editor {
       font-size: var(--font-down-1);
       min-width: 0;
+
       @include ellipsis;
 
       a {
@@ -118,7 +119,6 @@
 }
 
 /* topic page */
-
 nav.post-controls .actions .double-button button.has-like .d-icon {
   color: var(--simple-theme-link-color);
 }
