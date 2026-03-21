@@ -1,4 +1,4 @@
-.topic-list>tbody tr:not(.last-visit):not(.topic-list-item-separator) td {
+.topic-list > tbody tr:not(.last-visit, .topic-list-item-separator) td {
   border-bottom: 1px solid #eee;
 }
 
@@ -18,7 +18,6 @@
 }
 
 .topic-list {
-
   td,
   .creator a,
   .editor a {
@@ -134,7 +133,7 @@ img.avatar {
 }
 
 .topic-list a.title.visited:not(.badge-notification) {
-  color: #6644aa;
+  color: #64a;
 }
 
 .topic-list-item .discourse-tags {
@@ -144,7 +143,6 @@ img.avatar {
 }
 
 body {
-
   .topic-list-item.visited a.badge-wrapper,
   .latest-topic-list-item.visited a.badge-wrapper,
   .category-topic-link.visited a.badge-wrapper {
@@ -192,7 +190,6 @@ th.posters {
       text-decoration: underline;
     }
   }
-
 
   &:not(.visited) {
     .excerpt__contents {
@@ -252,7 +249,9 @@ span#tarck-top-links {
   text-align: center;
   line-height: 48px;
   padding: 1em 1.25em;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 }
 
 .tarck-nav-link-container a:hover,
@@ -263,8 +262,7 @@ span#tarck-top-links {
 }
 
 /* small-screen mode */
-@media screen and (max-width: 1024px) {
-
+@media screen and (width <= 1024px) {
   /* the .js makes sure that "small-screen-mode" overrides "big-screen-mode */
   .js div#tarck-navbar {
     position: static;
